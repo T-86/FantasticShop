@@ -97,9 +97,8 @@ public class UserLoginActivity extends AppCompatActivity {
             userLoginPassword_input.setError("Please, fill the empty password field");
             return false;
         } else if (!(matcher.matches())) {
-            userLoginPassword_input.setError("Wrong password, please try again with your right password");
+            userLoginPassword_input.setError("Wrong password, please try again with your right password or create a new account ");
             return false;
-
         }else {
             userLoginPassword_input.setError(null);
             return true;
